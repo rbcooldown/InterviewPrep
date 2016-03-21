@@ -55,11 +55,16 @@ public class SubstringPalindrome {
 		String s = "ababbabaaabaabbaabbbaabbaabababbabbaabababb";
 		SubstringPalindrome sp = new SubstringPalindrome();
 		long time = System.currentTimeMillis();
-		System.out.println(sp.countSubstringPalin(s));
+		int i = 0;
+		while( i++ < 10000)
+			sp.countSubstringPalin(s);
+//		System.out.println(sp.countSubstringPalin(s));
 		System.out.println("running time:" + (System.currentTimeMillis() - time + "ms"));
 		
 		time = System.currentTimeMillis();
-		System.out.println(sp.countSubstringPalin2(s));
+		while(i-->=0)
+			sp.countSubstringPalin2(s);
+//		System.out.println(sp.countSubstringPalin2(s));
 		System.out.println("running time:" + (System.currentTimeMillis() - time + "ms"));
 	}
 }

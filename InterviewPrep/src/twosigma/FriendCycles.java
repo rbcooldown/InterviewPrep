@@ -14,7 +14,6 @@ package twosigma;
  */
 public class FriendCycles {
 	public int[] relations;
-	volatile int[] N;
 	public int friendCycles(String[] friends){
 		int n = friends.length;
 		relations = new int[n];

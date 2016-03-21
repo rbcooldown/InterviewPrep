@@ -34,7 +34,6 @@ public class LongestStringChain {
 				maxLen = Math.max(maxLen, countMap.get(w));
 			}
 		}
-		
 		return maxLen;
 	}
 	
@@ -56,7 +55,5 @@ public class LongestStringChain {
 		String[] words = new String[]{"a", "abcd", "bcd", "abd", "cd", "c"};
 		LongestStringChain lsc = new LongestStringChain();
 		System.out.println(lsc.longestChain(words));
-
 	}
-
 }
